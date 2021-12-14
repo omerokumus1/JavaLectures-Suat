@@ -33,18 +33,33 @@ public class ReadingInputFromConsole {
 //        System.out.println("Entered character: " + c);
 
         // Reading character in a secure way
-        System.out.println("Enter a character: ");
-        String str = input.nextLine();
-        char c;
-        if (str.length() != 1)
-            System.out.println("Wrong input.");
-
-        else {
-            c = str.charAt(0);
-            System.out.println("Entered character: " + c);
-        }
+//        System.out.println("Enter a character: ");
+//        String str = input.nextLine();
+//        char c;
+//        if (str.length() != 1)
+//            System.out.println("Wrong input.");
+//
+//        else {
+//            c = str.charAt(0);
+//            System.out.println("Entered character: " + c);
+//        }
 
         // FX Framework
+
+        // Reading input in one line
+        // Ex; 5 4 3 2 [Enter]
+        // Örn; Read 4 integers in one line
+        System.out.print("Enter 4 integers in one line: ");
+        int a, b, e, d;
+        a = input.nextInt();
+        b = input.nextInt();
+        e = input.nextInt();
+        d = input.nextInt();
+        input.nextLine();
+        System.out.println("a: " + a);
+        System.out.println("b: " + b);
+        System.out.println("e: " + e);
+        System.out.println("d: " + d);
 
     }
 }
